@@ -4,10 +4,99 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Metric/Imperial Unit Converter</title>
+        <title>Basketball Scoreboard</title>
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
+        <div class="container">
+            <!-- Home of scoreboard -->
+            <div class="home-section">
+                <div class="home-points">
+                    <div>
+                        <button>+3</button>
+                        <button>+2</button>
+                        <button>+1</button>
+                    </div>                    
+                    <div>
+                        <h3>HOME</h3>
+                        <p>000</p>  
+                    </div> 
+                </div>
+                <div class="home-bonus">
+                    <div class="circle">O</div>
+                    <h3>Bonus</h3>
+                </div>
+                
+                <div class="home-fouls">
+                    <button>+1</button>
+                    <div>
+                        <h3>Fouls</h3>
+                        <p id="home-foul-cnt">00</p>
+                    </div>
+                </div>
+            </div>
+            <!-- End home of scoreboard -->
+
+            <!-- Start of middle scoreboard-->
+            <div class="middle-scoreboard">
+                <div class="timer-section">
+                    <h2 class="clock-style">Timer</h2>
+                    <div>
+                        <h3>Period</h3>
+                        <p>0</p>
+                        <button>+1</button>
+                    </div>
+                </div>
+                
+                <div class="possession">
+                    <div class="circle"></div>
+                    <h3>POSS</h3>
+                    <div class="circle"></div>
+                </div>
+
+                <div class="shot-clock">
+                    <h3>SHOT CLOCK</h3>
+                    <div class="shot-clck-timer">
+                        <h3>:</h3>
+                        <p>00</p>
+                    </div>
+                </div>
+            </div>
+            <!-- End of middle scoreboard-->
+            
+            <!-- Start of Guest scoreboard-->
+            <div class="guest-section">
+                <div class="guest-points">
+                    <div>
+                        <button>+3</button>
+                        <button>+2</button>
+                        <button>+1</button>
+                    </div>                    
+                    <div>
+                        <h3>GUEST</h3>
+                        <p>000</p>  
+                    </div> 
+                </div>
+                <div class="guest-bonus">
+                    <div class="circle">O</div>
+                    <h3>Bonus</h3>
+                </div>
+                
+                <div class="guest-fouls">
+                    <button>+1</button>
+                    <div>
+                        <h3>Fouls</h3>
+                        <p id="guest-foul-cnt">00</p>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Guest scoreboard -->
+           
+
+           
+
+
+        </div>
         
         
     <script src="index.js"></script>

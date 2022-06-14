@@ -1,4 +1,4 @@
-# Password Generator
+# Basket BallScoreboard
 
 [https://unit-converter-scrimba.netlify.app/](https://unit-converter-scrimba.netlify.app/)
 
