@@ -1,14 +1,70 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Roboto+Slab:wght@500&display=swap');
+/* font-family: 'Kdam Thmor Pro', sans-serif; */
 
 html, body, input {
     margin: 0;
-    padding: 0;
-    
+    padding: 0;    
 }
 
 body {    
-    /* background-color: rgb(255, 210, 143);     */
-   
+    text-align: center;
+    background-color: #050505;
+    color: #ffffff;
 }
 
+.container {
+    border: 2px solid white;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;   
+}
+
+/* Home scoreboard section */
+
+.home-points {
+    width: 200px;
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 50px;
+}
+.vertical-btns {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3px;
+}
+
+.vertical-btns button {
+    color: red;
+    border: none;
+    outline: none;
+    background-color: #050505;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.home-points h1 {
+    /* border: 2px solid red; */
+    margin-top: 0;
+    font-size: 40px;
+    margin-bottom: 0;
+    
+}
+
+#home-pt-cnt {
+    /* border: 1px solid red;  */
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Fonts for scoreboard letters: 
+            Russo One
+    Fonts for numbers: 
+    Kdam Thmor Pro or Roboto */
