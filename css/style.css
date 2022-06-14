@@ -1,0 +1,103 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap');
+
+html, body, input {
+    margin: 0;
+    padding: 0;
+    color: #f8f8ff;
+}
+
+body {    
+    /* background-color: rgb(255, 210, 143);     */
+    background-color: #a0a0a0;
+}
+
+main {
+    max-width: 550px;
+    margin: 0 auto;
+    text-align: center;  
+    background-color: #1F2937;
+    margin-top: 25px;
+    border-radius: 10px;    
+}
+
+header {
+    /* background: transparent; */
+    /* outline: none; */
+    /* border: none; */
+    color: white;
+    border-radius: 3px;
+}
+
+header {    
+    background: transparent;
+    border-radius: 10px 10px 0px 0px;  /* Affects the corners of the element in clock-wise order */    
+    background: linear-gradient(45deg, #1e8db6, #18244A, #18244A, #1e8db6);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    }
+
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;    
+        }   
+    
+}
+
+
+.title {
+    /* border: 2px solid yellow; */
+    /* margin-top: 50px; */
+    /* margin-bottom: 5px; */
+    margin-top: 0px;
+    padding-top: 50px;
+    font-size: 20px;
+    font-family: outfit;
+    
+}
+
+#count-el {
+    max-width: 545px;
+    margin: 0px;
+    padding-top: 5px;
+    padding-bottom: 20px;    
+    font-size: 80px;
+    font-family: outfit;
+    font-weight: bolder;
+    background: transparent;
+    text-align: center;
+    border: none;
+    outline: none;  /* Removes the outline that is shown when user click on the input prior to typing  */
+}
+
+.container {   
+    /* padding: 0px;
+    border: 2px solid red; */    
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;    
+    padding: 15px 50px 20px;
+}
+
+#length-el, #volume-el, #mass-el, #speed-el, #temp-el {
+    color:#cccccc;
+}
+
+.length, .volume, .mass, .speed, .temp {
+    /* margin: 0; */
+    margin-top: 30px;
+}
+
+summary {
+    list-style-type: none; /* Firefox */
+    cursor: pointer;
+
+}
+  
+summary::-webkit-details-marker {
+    display: none; /* Chrome */
+}
