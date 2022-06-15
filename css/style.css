@@ -2,23 +2,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Roboto+Slab:wght@500&display=swap');
 /* font-family: 'Kdam Thmor Pro', sans-serif; */
 
-html, body, input {
+html{
     margin: 0;
-    padding: 0;    
+    padding: 0; 
+       
 }
 
 body {    
+    margin: 0;
+    padding: 0; 
     text-align: center;
     background-color: #050505;
     color: #ffffff;
 }
 
 .container {
-    border: 2px solid white;
+    /* border: 2px solid white; */
+    
+    max-width: 1000px;
     height: 500px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;   
+    margin: 0 auto;
 }
 
 /* Home scoreboard section */
@@ -32,7 +38,7 @@ body {
     justify-content: space-evenly;
     padding: 0px;
     margin: 0px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 .vertical-btns {
     display: flex;
@@ -41,7 +47,7 @@ body {
 }
 
 .vertical-btns button {
-    color: red;
+    color: greenyellow;
     border: none;
     outline: none;
     background-color: #050505;
@@ -59,7 +65,7 @@ body {
 
 #home-pt-cnt {
     /* border: 1px solid red;  */
-    font-size: 30px;
+    font-size: 50px;
     margin: 0;
     padding: 0;
 }
@@ -68,3 +74,47 @@ body {
             Russo One
     Fonts for numbers: 
     Kdam Thmor Pro or Roboto */
+
+.home-section {
+    border: 2px solid red;
+}
+    
+.home-points {
+    border: 2px solid white;
+}
+
+.home-bonus {
+    border: 2px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 20px;
+}
+.home-bonus h2 {
+    /* border: 2px solid white; */
+    font-size: 30px;
+    margin-left: 20px;   
+}
+
+/*  */
+.home-bonus .circle {
+    /* border: 2px solid white; */
+    background: rgb(255, 0, 0); /*rgba(195, 45, 45, 0.523); default color state */
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;    
+}
+
+.home-fouls {
+    border: 2px solid yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 40px;
+}
+
+.home-fouls div {
+    margin-left: 20px;
+}
