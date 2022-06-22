@@ -43,12 +43,13 @@ body {
 .vertical-btns {
     display: flex;
     flex-direction: column;
-    margin-top: 3px;
+    margin-top: 10px;
 }
 
 .vertical-btns button {
     color: greenyellow;
-    border: none;
+    border-radius: 3px;
+    border: 1px solid greenyellow;
     outline: none;
     background-color: #1B244A;
     font-size: 25px;
@@ -103,7 +104,7 @@ body {
 /*  */
 .home-bonus .circle {
     /* border: 2px solid white; */
-    background: rgb(255, 0, 0); /*rgba(195, 45, 45, 0.523); default color state */
+    background: rgba(125, 28, 28, 0.523); /*rgba(195, 45, 45, 0.523); 125, 28, 28, 0.523default color state 255, 0, 0*/
     border-radius: 50%;
     width: 10px;
     height: 10px;    
@@ -113,7 +114,7 @@ body {
     /* border: 2px solid yellow; */
     display: flex;
     justify-content: left;
-    align-items: flex-start;
+    /* align-items: flex-start; */
     /* padding-right: 10px; */
     margin: 0;
     padding: 0;
@@ -141,13 +142,16 @@ body {
 
 .home-fouls button {
     /* border: 2px solid yellow; */
-    margin-top: 2px;
+    /* margin-top: 2px; */
+    margin-top: 5px;
     margin-left: 30px;
     border: none;
     outline: none;
     background-color: #1B244A;
     font-size: 25px;
-    color: greenyellow
-
+    color: greenyellow;
+    border-radius: 3px;
+    border: 1px solid greenyellow;
+    height: 33px;
 
 }
