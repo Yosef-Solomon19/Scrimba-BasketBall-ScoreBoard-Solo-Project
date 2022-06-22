@@ -29,7 +29,7 @@ body {
 
 /* Home scoreboard section */
 
-.home-points {
+.side-points {
     width: 200px;
     /* border: 2px solid white; */
     display: flex;
@@ -56,7 +56,7 @@ body {
     margin-bottom: 5px;
 }
 
-.home-points h1 {
+.side-points h1 {
     /* border: 2px solid red; */
     margin-top: 0;
     font-size: 40px;
@@ -78,15 +78,15 @@ body {
     Fonts for numbers: 
     Kdam Thmor Pro or Roboto */
 
-.home-section {
+.side-section {
     /* border: 2px solid red; */
 }
     
-.home-points {
+.side-points {
     /* border: 2px solid white; */
 }
 
-.home-bonus {
+.side-bonus {
     /* border: 2px solid green; */
     display: flex;
     justify-content: center;
@@ -95,14 +95,14 @@ body {
     padding: 0px;
     margin-bottom: 20px;
 }
-.home-bonus h2 {
+.side-bonus h2 {
     /* border: 2px solid white; */
     font-size: 30px;
     margin-left: 20px;   
 }
 
 /*  */
-.home-bonus .circle {
+.side-bonus .circle {
     /* border: 2px solid white; */
     background: rgba(125, 28, 28, 0.523); /*rgba(195, 45, 45, 0.523); 125, 28, 28, 0.523default color state 255, 0, 0*/
     border-radius: 50%;
@@ -110,7 +110,7 @@ body {
     height: 10px;    
 }
 
-.home-fouls {
+.side-fouls {
     /* border: 2px solid yellow; */
     display: flex;
     justify-content: left;
@@ -120,11 +120,11 @@ body {
     padding: 0;
 }
 
-.home-fouls div {
+.side-fouls div {
     margin-left: 10px;    
 }
 
-.home-fouls h2{ 
+.side-fouls h2{ 
     font-size: 30px;
     /* border: 2px solid yellow; */
     margin: 0;
@@ -140,7 +140,7 @@ body {
     margin-top: 2px;
 }
 
-.home-fouls button {
+.side-fouls button {
     /* border: 2px solid yellow; */
     /* margin-top: 2px; */
     margin-top: 5px;
@@ -153,5 +153,9 @@ body {
     border-radius: 3px;
     border: 1px solid greenyellow;
     height: 33px;
-
 }
+
+/* Guest Side Section */
+/* Since the guest side is a carbon copy from the home side. I thought changing 
+the class-names would help to cut down on re-writing code. The middle section is 
+alittle different though. */
