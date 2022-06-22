@@ -64,7 +64,7 @@ body {
     
 }
 
-#home-pt-cnt {
+.side-pt-cnt {
     /* border: 1px solid red;  */
     font-size: 50px;
     margin: 0;
@@ -130,7 +130,7 @@ body {
     margin: 0;
 }
 
-#home-foul-cnt {
+.side-foul-cnt {
     font-size: 50px;
     /* border: 2px solid yellow; */
     margin: 0;
@@ -159,3 +159,8 @@ body {
 /* Since the guest side is a carbon copy from the home side. I thought changing 
 the class-names would help to cut down on re-writing code. The middle section is 
 alittle different though. */
+
+.guest-score-tally {
+    margin-left: 5px;
+
+}

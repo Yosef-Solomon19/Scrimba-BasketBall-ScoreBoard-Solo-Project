@@ -19,7 +19,7 @@
                     </div>                    
                     <div>
                         <h1>HOME</h1>
-                        <p id="home-pt-cnt">000</p>  
+                        <p id="home-pt-cnt" class="side-pt-cnt">000</p>  
                     </div> 
                 </div>
                 <div class="side-bonus">
@@ -31,7 +31,7 @@
                     <button>+1</button>
                     <div>
                         <h2>Fouls</h2>
-                        <p id="home-foul-cnt">00</p>
+                        <p class="side-foul-cnt">00</p>
                     </div>
                 </div>
             </div>
@@ -65,28 +65,28 @@
             <!-- End of middle scoreboard-->
             
             <!-- Start of Guest scoreboard-->
-            <div class="guest-section">
-                <div class="guest-points">
-                    <div>
-                        <button>+3</button>
+            <div class="side-section">
+                <div class="side-points">
+                    <div class="vertical-btns">
+                        <button onclick=test()>+3</button>
                         <button>+2</button>
                         <button>+1</button>
                     </div>                    
-                    <div>
-                        <h3>GUEST</h3>
-                        <p>000</p>  
+                    <div class="guest-score-tally">
+                        <h1>GUEST</1>
+                        <p id="guest-pt-cnt" class="side-pt-cnt">000</p>  
                     </div> 
                 </div>
-                <div class="guest-bonus">
-                    <div class="circle">O</div>
-                    <h3>Bonus</h3>
+                <div class="side-bonus">
+                    <div class="circle"></div>
+                    <h2>Bonus</h2>
                 </div>
                 
-                <div class="guest-fouls">
+                <div class="side-fouls">
                     <button>+1</button>
                     <div>
-                        <h3>Fouls</h3>
-                        <p id="guest-foul-cnt">00</p>
+                        <h2>Fouls</h2>
+                        <p class="side-foul-cnt">00</p>
                     </div>
                 </div>
             </div>
