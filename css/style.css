@@ -46,7 +46,7 @@ body {
     margin-top: 10px;
 }
 
-.vertical-btns button {
+button {
     color: greenyellow;
     border-radius: 3px;
     border: 1px solid greenyellow;
