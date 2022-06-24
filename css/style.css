@@ -164,3 +164,14 @@ alittle different though. */
     margin-left: 5px;
 
 }
+
+
+/* Middle-Scoreboard  */
+.middle-scoreboard {
+    border: 1px solid red;
+
+}
+
+.timer-section{
+    border: 1px solid red;
+}
