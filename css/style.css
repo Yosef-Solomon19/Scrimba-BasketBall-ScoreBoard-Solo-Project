@@ -162,16 +162,23 @@ alittle different though. */
 
 .guest-score-tally {
     margin-left: 5px;
-
 }
 
 
 /* Middle-Scoreboard  */
 .middle-scoreboard {
-    border: 1px solid red;
+    margin-top: 95px;
+    /* border: 1px solid red; */
 
 }
 
 .timer-section{
-    border: 1px solid red;
+    /* border: 1px solid red; */
+}
+.timer {
+    margin-top: 0;
+    /* border: 1px solid teal; */
+    background-color: black;
+    font-size: 50px;
+    border-radius: 10px;
 }
