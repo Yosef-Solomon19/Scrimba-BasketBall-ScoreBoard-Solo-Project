@@ -78,14 +78,6 @@ button {
     Fonts for numbers: 
     Kdam Thmor Pro or Roboto */
 
-.side-section {
-    /* border: 2px solid red; */
-}
-    
-.side-points {
-    /* border: 2px solid white; */
-}
-
 .side-bonus {
     /* border: 2px solid green; */
     display: flex;
