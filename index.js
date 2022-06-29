@@ -67,3 +67,21 @@ function displayTimeLeft(seconds) {
     scoreboardTimerDisplay.textContent = display;
 }
 
+/*
+29/6/2022
+What I've Learned 
+Learning the difference betweeen document.getElementById and querySelector 
+Learned alittle bit about ternary operators in a template literal string 
+Followed along a video to create a timer w/ Wes Bos
+    However, not sure if I should remember how to do it or create a situation
+    to make it easier to find it again.
+
+What I'm having problems with 
+I haven't dealt with timers or time in general with progarmming. 
+    How do I save the timer when its paused ?
+
+What is left to do: 
+24 second shot clock timer 
+Styling for the middle section 
+Add a click feature on the bonus sign to light up the red circle 
+*/
