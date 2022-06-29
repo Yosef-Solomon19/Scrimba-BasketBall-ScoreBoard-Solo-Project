@@ -39,7 +39,8 @@ function timer(seconds) {
 function displayTimeLeft(seconds) {
     const minutes = Math.floor(seconds / 60); // returns the largest integer <= the given number.
     const remainderSeconds = seconds % 60; // returns the the remainder left over from the division
-    const display = `${minutes}:${remainderSeconds}`;
+    const display = `${minutes}:${remainderSeconds < 10 ? '0':''}${remainderSeconds}`; // Adds a in the first digit if the remaining seconds
+                                                                                    // is < 10. Using Ternary operator
     scoreboardTimerDisplay.textContent = display;
-    console.log({minutes, remainderSeconds})
+    
 }
