@@ -8,10 +8,33 @@ function test() {
    homePtCntEl.textContent = `${homeSum}` ;
 }
 
+function startTimer(){
+    const timeLength = 2880;
+    timer(timeLength);
+};
+
+function stopTimer(){
+    // if timer is running pause 
+    
+    // else start
+    clearInterval(countdown);
+    
+    // const saveTime = secondsLeft;
+
+};
+
+function contdTimer(){
+    // const resumeTime = timeLength - saveTime; 
+    // timer(resumeTime);
+
+};
+
+
 
 // creating a 48 min countdown timer for the basketball scoreboard
 const scoreboardTimerDisplay = document.querySelector('.timer');;
  
+// Wes Box video on creating a timer
 let countdown; 
 function timer(seconds) {
     const now = Date.now(); // returns the number of milliseconds
@@ -42,5 +65,5 @@ function displayTimeLeft(seconds) {
     const display = `${minutes}:${remainderSeconds < 10 ? '0':''}${remainderSeconds}`; // Adds a in the first digit if the remaining seconds
                                                                                     // is < 10. Using Ternary operator
     scoreboardTimerDisplay.textContent = display;
-    
 }
+
