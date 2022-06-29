@@ -10,6 +10,7 @@ function test() {
 
 
 // creating a 48 min countdown timer for the basketball scoreboard
+const scoreboardTimerDisplay = document.querySelector('.timer');;
  
 let countdown; 
 function timer(seconds) {
@@ -38,6 +39,7 @@ function timer(seconds) {
 function displayTimeLeft(seconds) {
     const minutes = Math.floor(seconds / 60); // returns the largest integer <= the given number.
     const remainderSeconds = seconds % 60; // returns the the remainder left over from the division
-
+    const display = `${minutes}:${remainderSeconds}`;
+    scoreboardTimerDisplay.textContent = display;
     console.log({minutes, remainderSeconds})
 }
