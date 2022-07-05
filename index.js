@@ -115,6 +115,7 @@ What is left to do:
 Pause and resume timer functionality
 24 second shot clock timer 
 Styling for the middle section 
+How to align a colon ? 
 Add a click feature on the bonus sign to light up the red circle 
     Do I need to turn it into a button or make it clickable ?
 */
