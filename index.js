@@ -8,34 +8,12 @@ function test() {
    homePtCntEl.textContent = `${homeSum}` ;
 }
 
-function startTimer(){
-    const timeLength = 2880;
-    timer(timeLength);
-};
-
-function stopTimer(){
-    // if timer is running pause 
-    
-    // else start
-    clearInterval(countdown);
-    
-    // const saveTime = secondsLeft;
-
-};
-
-function contdTimer(){
-    // const resumeTime = timeLength - saveTime; 
-    // timer(resumeTime);
-
-};
-
-
-
 // creating a 48 min countdown timer for the basketball scoreboard
 const scoreboardTimerDisplay = document.querySelector('.timer');;
  
 // Wes Box video on creating a timer
 let countdown; 
+let currentCountdown;
 function timer(seconds) {
     const now = Date.now(); // returns the number of milliseconds
     const then = now + seconds * 1000; // returns the number in seconds
@@ -48,14 +26,26 @@ function timer(seconds) {
     // console.log({now,then});
     countdown = setInterval(() => {
         const secondsLeft = Math.round((then - Date.now()) / 1000);
+        currentCountdown = secondsLeft; // Stores original value prior to being stopped by clearInterval
+        console.log(currentCountdown)
+       
         // Check to stop to prevent counting negative numbers 
         if(secondsLeft < 0) {
             clearInterval(countdown); // cancels a times repeating action that was established by setinterval
+            if(currentCountdown < 0 ) { // For some reason the timer doesn't stop till -1 Not sure why ?
+                clearInterval(currentCountdown) 
+                return;
+            }
             return;
+        } else {
+            //Display minutes and seconds
+            // currentCountdown = countdown;
+            displayTimeLeft(secondsLeft);
         }
-        //Display minutes and seconds  
-        displayTimeLeft(secondsLeft); 
+        
+        
     }, 1000); 
+    ;
 }
 
 // Converting seconds to mintues 
@@ -71,7 +61,8 @@ function displayTimeLeft(seconds) {
 29/6/2022
 What I've Learned 
 Learning the difference betweeen document.getElementById and querySelector 
-Learned alittle bit about ternary operators in a template literal string 
+Learned alittle bit about ternary operators in a template literal string
+    Not enough to for long term memory.
 Followed along a video to create a timer w/ Wes Bos
     However, not sure if I should remember how to do it or create a situation
     to make it easier to find it again.
@@ -79,9 +70,51 @@ Followed along a video to create a timer w/ Wes Bos
 What I'm having problems with 
 I haven't dealt with timers or time in general with progarmming. 
     How do I save the timer when its paused ?
+    How do I continue the countdown when its paused ?
 
 What is left to do: 
 24 second shot clock timer 
 Styling for the middle section 
 Add a click feature on the bonus sign to light up the red circle 
+    Do I need to turn it into a button or make it clickable ?
+*/
+
+function startTimer(){
+    clearInterval(countdown,currentCountdown)
+    const timeLength = 8; //2880
+    timer(timeLength);
+};
+
+function pauseTimer(){
+    clearInterval(countdown);    
+};
+
+function resumeTimer() {
+    clearInterval(countdown,currentCountdown)  
+    timer(currentCountdown);
+}
+
+/*
+7/5/2022
+What I've Learned 
+I Figured out how to pause and resume timer 
+    For the pause, I needed to use the method to cancel the repeated action set by setInterval.
+    I think this also means that I can't use the original value from the countdown variable.
+
+    To resume, 
+    I initally had a another variable that stores the original value inside the countdown interval variable/method.
+    From there the resumeTimer funciton calls the timer function but with an update value from where 
+    the original value stopped when clear Interval was called after hiiting the pause button.
+
+What I'm having problems with 
+I haven't dealt with timers or time in general with progarmming. 
+    How do I save the timer when its paused ?
+    How do I continue the countdown when its paused ?
+
+What is left to do: 
+Pause and resume timer functionality
+24 second shot clock timer 
+Styling for the middle section 
+Add a click feature on the bonus sign to light up the red circle 
+    Do I need to turn it into a button or make it clickable ?
 */
