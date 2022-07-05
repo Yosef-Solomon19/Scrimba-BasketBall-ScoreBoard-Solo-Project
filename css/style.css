@@ -157,10 +157,9 @@ alittle different though. */
     margin-left: 5px;
 }
 
-
 /* Middle-Scoreboard  */
 .middle-scoreboard {
-    margin-top: 95px;
+    margin-top: 75px;
     /* border: 1px solid red; */
 
 }
@@ -168,6 +167,7 @@ alittle different though. */
 .timer-section{
     /* border: 1px solid red; */
 }
+
 .timer {
     margin-top: 0;
     /* border: 1px solid teal; */
@@ -175,3 +175,43 @@ alittle different though. */
     font-size: 50px;
     border-radius: 10px;
 }
+
+/* Middle Scoreboard - Period section  */
+.period { 
+    /* margin-top: 50px; */
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: space-evenly
+}
+.period h3 {
+    font-size: 30px;
+}
+
+.period p {
+    font-size: 40px;
+    width: 50px;
+    /* border: 2px solid yellow; */
+    margin: 0;
+    padding: 0;
+    background: #050505;
+    border-radius: 8px;
+}
+
+/* Middle Scoreboard - Possession  section  */
+.possession {
+    /* border: 1px solid yellow; */
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: space-evenly;
+    
+}
+.pos-circle {
+    background: rgba(49, 88, 42, 0.958); /*rgba(41, 236, 6, 0.958); 125, 28, 28, 0.523default color state 255, 0, 0*/
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+
+/* Middle Scoreboard - Shot Clock section  */
