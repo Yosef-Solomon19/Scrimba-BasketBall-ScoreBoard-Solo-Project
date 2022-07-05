@@ -72,6 +72,7 @@ button {
     padding: 0;
     background: #050505;
     border-radius: 8px;
+    color: greenyellow;
 }
 
 /* Fonts for scoreboard letters: 
@@ -131,6 +132,7 @@ button {
     background: #050505;
     border-radius: 8px;
     margin-top: 2px;
+    color: yellow;
 }
 
 .side-fouls button {
@@ -157,15 +159,17 @@ alittle different though. */
     margin-left: 5px;
 }
 
+
 /* Middle-Scoreboard  */
 .middle-scoreboard {
-    margin-top: 75px;
+    margin-top: 115px;
     /* border: 1px solid red; */
 
 }
 
 .timer-section{
     /* border: 1px solid red; */
+    
 }
 
 .timer {
@@ -174,6 +178,7 @@ alittle different though. */
     background-color: black;
     font-size: 50px;
     border-radius: 10px;
+    color: rgb(226, 16, 16);
 }
 
 /* Middle Scoreboard - Period section  */
@@ -182,7 +187,8 @@ alittle different though. */
     display: flex;
     flex-direction: row;
     align-items: center; 
-    justify-content: space-evenly
+    justify-content: space-evenly;
+
 }
 .period h3 {
     font-size: 30px;
@@ -201,6 +207,7 @@ alittle different though. */
 /* Middle Scoreboard - Possession  section  */
 .possession {
     /* border: 1px solid yellow; */
+    font-size: 25px;
     display: flex;
     flex-direction: row;
     align-items: center; 
@@ -215,3 +222,26 @@ alittle different though. */
 }
 
 /* Middle Scoreboard - Shot Clock section  */
+.shot-clock {
+    border: 1px solid yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    font-size: 25px;
+}
+
+/* .shot-clock h3 {
+    font-size: 25px;
+} */
+
+.shot-clck-timer {
+    /* border: 1px solid yellow; */
+    text-align: center;    
+    width: 70px;
+    height: 60px;
+    font-size: 45px;
+    display: flex;
+    align-items: center;    
+    justify-content: space-evenly;
+}
