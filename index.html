@@ -23,7 +23,7 @@
                     </div> 
                 </div>
                 <div class="side-bonus">
-                    <button class="circle"></button>
+                    <button class="circle lit-red toggle" onclick="switchColorHome()"></button>
                     <h2>Bonus</h2>
                 </div>
                 
@@ -55,9 +55,9 @@
                 
                 
                 <div class="possession">
-                    <div class="pos-circle"></div>
+                    <div class="poss-home pos-circle lit-green toggle" onclick="possColorHome()"></div>
                     <h3>POSS</h3>
-                    <div class="pos-circle"></div>
+                    <div class="poss-guest pos-circle lit-green toggle" onclick="possColorGuest()"></div>
                 </div>
 
                 <div class="shot-clock">
@@ -84,7 +84,7 @@
                     </div> 
                 </div>
                 <div class="side-bonus">
-                    <button tabindex= 0 class="circle circle2"></button>
+                    <button id="guest" class="circle lit-red toggle" onclick="switchColorGuest()"></button>
                     <h2>Bonus</h2>
                 </div>
                 
