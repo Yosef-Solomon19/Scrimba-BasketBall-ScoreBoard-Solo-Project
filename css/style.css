@@ -162,7 +162,7 @@ alittle different though. */
 
 /* Middle-Scoreboard  */
 .middle-scoreboard {
-    margin-top: 115px;
+    margin-top: 145px;
     /* border: 1px solid red; */
 
 }
@@ -223,7 +223,7 @@ alittle different though. */
 
 /* Middle Scoreboard - Shot Clock section  */
 .shot-clock {
-    border: 1px solid yellow;
+    
     display: flex;
     flex-direction: column;
     align-items: center; 
@@ -238,10 +238,20 @@ alittle different though. */
 .shot-clck-timer {
     /* border: 1px solid yellow; */
     text-align: center;    
-    width: 70px;
+    width: 80px;
     height: 60px;
     font-size: 45px;
     display: flex;
     align-items: center;    
-    justify-content: space-evenly;
+    justify-content: space-around;
+    background: #050505;
+    border-radius: 8px;
+    color:rgb(226, 16, 16)
+    
+}
+
+.shot-clck-timer span {
+    
+    vertical-align: middle;
+    padding-bottom: 8px;
 }
