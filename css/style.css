@@ -98,10 +98,16 @@ button {
 /*  */
 .side-bonus .circle {
     /* border: 2px solid white; */
-    background: rgba(125, 28, 28, 0.523); /*rgba(195, 45, 45, 0.523); 125, 28, 28, 0.523default color state 255, 0, 0*/
+    margin-top: 5px;
+    background-color: rgba(125, 28, 28, 0.523); /*rgba(195, 45, 45, 0.523); 125, 28, 28, 0.523default color state 255, 0, 0*/
     border-radius: 50%;
-    width: 10px;
-    height: 10px;    
+    width: 15px;
+    height: 15px;
+    cursor: pointer;  
+    border: none;  
+}
+.circle:{
+    background-color: rgba(255, 0, 0); 
 }
 
 .side-fouls {
@@ -217,8 +223,8 @@ alittle different though. */
 .pos-circle {
     background: rgba(49, 88, 42, 0.958); /*rgba(41, 236, 6, 0.958); 125, 28, 28, 0.523default color state 255, 0, 0*/
     border-radius: 50%;
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
 }
 
 /* Middle Scoreboard - Shot Clock section  */
@@ -231,9 +237,7 @@ alittle different though. */
     font-size: 25px;
 }
 
-/* .shot-clock h3 {
-    font-size: 25px;
-} */
+
 
 .shot-clck-timer {
     /* border: 1px solid yellow; */
