@@ -5,7 +5,8 @@ let homeSum = 0;
 
 function test() {
     homeSum += 3;
-   homePtCntEl.textContent = `${homeSum}` ;
+    homePtCntEl.textContent = `${homeSum}`;
+   
 }
 
 // creating a 48 min countdown timer for the basketball scoreboard
@@ -119,3 +120,39 @@ How to align a colon ?
 Add a click feature on the bonus sign to light up the red circle 
     Do I need to turn it into a button or make it clickable ?
 */
+
+/* Change color when the circle next to the bonuses are clicked*/
+// This feels like a "DRY" situation not sure.
+
+function switchColorHome() {
+    document.querySelector(".circle").classList.toggle("lit-red");
+}
+function switchColorGuest() {
+    document.getElementById("guest").classList.toggle("lit-red");
+}
+
+/* Change color when the circles flanking the Poss are clicked*/
+function possColorHome() {
+    document.querySelector(".poss-home").classList.toggle("lit-green");
+}
+function possColorGuest() {
+    document.querySelector(".poss-guest").classList.toggle("lit-green");
+}
+
+/*
+7/5/2022
+What I've accomplished
+Adding featue to light up the color indicators when they're clicked i.e bonus/ possession 
+
+What I've Learned 
+If I wanted to switch between two colors I can use what's called a class list.toggle
+
+Should research on potential ways to reduce DRY situations espceially in the CSS portion of the code.
+
+What is left to do: 
+Shot clock timer. 
+Increments for the points, fouls and period.
+Font changes for text, & for numbers 
+*/
+
+
