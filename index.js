@@ -3,11 +3,13 @@
 const homePtCntEl=document.getElementById("home-pt-cnt");
 let homeSum = 0;
 
+
 function test() {
     homeSum += 3;
     homePtCntEl.textContent = `${homeSum}`;
    
 }
+
 
 // creating a 48 min countdown timer for the basketball scoreboard
 const scoreboardTimerDisplay = document.querySelector('.timer');;
@@ -36,17 +38,13 @@ function timer(seconds) {
             if(currentCountdown < 0 ) { // For some reason the timer doesn't stop till -1 Not sure why ?
                 clearInterval(currentCountdown) 
                 return;
-            }
-            return;
+            } return;
         } else {
             //Display minutes and seconds
             // currentCountdown = countdown;
             displayTimeLeft(secondsLeft);
         }
-        
-        
     }, 1000); 
-    ;
 }
 
 // Converting seconds to mintues 
@@ -79,11 +77,20 @@ Styling for the middle section
 Add a click feature on the bonus sign to light up the red circle 
     Do I need to turn it into a button or make it clickable ?
 */
-
+let isGameTimerOn = false;
 function startTimer(){
     clearInterval(countdown,currentCountdown)
-    const timeLength = 8; //2880
-    timer(timeLength);
+    const timeLength = 2880; //2880
+    
+    if (isGameTimerOn === true) {
+        timer(0);
+        clearInterval(countdown,currentCountdown)
+        isGameTimerOn = false;
+    } else if (isGameTimerOn === false) {
+        timer(timeLength);
+        isGameTimerOn = true;
+    }
+
 };
 
 function pauseTimer(){
@@ -156,8 +163,56 @@ Font changes for text, & for numbers
 */
 
 // Create shot clock timer
-function shotClockTimer(){
+let isShotClockOn = false; 
+let shotTimerCountdown;
+function shotClock(){    
+    clearInterval(shotTimerCountdown);
     const shotTimer = 24; // 24 seconds 
-    timer(shotTimer);
+    // A way to reset the shot clock timer to 0. By checking if the shot clock timer is on.
+    if (isShotClockOn === true) {
+        shotClockTimer(0);
+        isShotClockOn = false;
+    } else {
+        shotClockTimer(shotTimer);
+        isShotClockOn = true; 
+    }
+    
+
+    // shotClockTimer(shotTimer);
+    
 }
 
+const shotClockDisplay = document.querySelector(".shot-clck-timer p");
+function shotClockTimer(seconds) {
+    const now = Date.now(); // returns the number of milliseconds
+    const then = now + seconds * 1000; // returns the number in seconds
+    displayShotClock(seconds); 
+    // For example if you put 5 seconds. setInterval needs a sceond to elapse to 
+    // start showing the seconds. Which means it will skip number 5.
+    // This function is there to display the second that the setInterval will skip to display.
+
+
+    // console.log({now,then});
+    shotTimerCountdown = setInterval(() => {
+        const secondsLeft = Math.round((then - Date.now()) / 1000);
+        console.log(secondsLeft);
+       
+        // Check to stop to prevent counting negative numbers 
+        if(secondsLeft < 0) {
+            clearInterval(shotTimerCountdown); // cancels a times repeating action that was established by setinterval
+        } else {
+            //Display minutes and seconds
+            // currentCountdown = countdown;
+            displayShotClock(secondsLeft);
+        } 
+    }, 1000);
+
+}
+
+function displayShotClock(seconds) {
+    // const minutes = Math.floor(seconds / 60); // returns the largest integer <= the given number.
+    const remainderSeconds = seconds % 60; // returns the the remainder left over from the division
+    const display = `${remainderSeconds < 10 ? '0':''}${remainderSeconds}`; // Adds the first digit if the remaining seconds
+                                                                                    // is < 10. Using Ternary operator
+    shotClockDisplay.textContent = display;
+}
