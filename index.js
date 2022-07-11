@@ -2,7 +2,7 @@
 
 
 // creating a 48 min countdown timer for the basketball scoreboard
-const scoreboardTimerDisplay = document.querySelector('.timer');;
+const scoreboardTimerDisplay = document.querySelector('.timer');
  
 // Wes Box video on creating a timer
 let countdown; 
@@ -265,5 +265,18 @@ function onePointer() {
     }
 }
 
+// Add increments for period
+const periodCountEl = document.getElementById("period-el"); 
+let periodNum = 0 ;
+function periodCnt() {
+    if(periodNum < 4 ) {
+        periodNum += 1 ;
+        periodCountEl.textContent = periodNum;
+    } else {
+        periodNum = 0;
+        periodCountEl.textContent = 0;
+    }
+
+}
 
 
