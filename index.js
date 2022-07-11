@@ -219,12 +219,51 @@ function threePointer() {
         guestSum += 3;
         guestPtCntEl.textContent = `${guestSum}`
     } 
-
     document.getElementById("home-3pt").onclick = function()
     {
         homeSum += 3;
         homePtCntEl.textContent = `${homeSum}`
-    }
-        
+    }        
 }
+
+function twoPointer() {
+    document.getElementById("guest-2pt").onclick = function()
+    {
+        guestSum += 2;
+        guestPtCntEl.textContent = `${guestSum}`
+    } 
+    document.getElementById("home-2pt").onclick = function()
+    {
+        homeSum += 2;
+        homePtCntEl.textContent = `${homeSum}`
+    }
+}
+
+function twoPointer() {
+    document.getElementById("guest-2pt").onclick = function()
+    {
+        guestSum += 2;
+        guestPtCntEl.textContent = `${guestSum}`
+    }
+    document.getElementById("home-2pt").onclick = function()
+    {
+        homeSum += 2;
+        homePtCntEl.textContent = `${homeSum}`
+    }
+}
+
+function onePointer() {
+    document.getElementById("guest-1pt").onclick = function()
+    {
+        guestSum += 1;
+        guestPtCntEl.textContent = `${guestSum}`
+    }
+    document.getElementById("home-1pt").onclick = function()
+    {
+        homeSum += 1;
+        homePtCntEl.textContent = `${homeSum}`
+    }
+}
+
+
 
