@@ -74,6 +74,7 @@ function startTimer(){
     
     if (isGameTimerOn === true) {
         timer(0);
+        currentCountdown = 0;
         clearInterval(countdown,currentCountdown)
         isGameTimerOn = false;
     } else if (isGameTimerOn === false) {
