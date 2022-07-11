@@ -1,15 +1,5 @@
 "use strict";
 
-const homePtCntEl=document.getElementById("home-pt-cnt");
-let homeSum = 0;
-
-
-function test() {
-    homeSum += 3;
-    homePtCntEl.textContent = `${homeSum}`;
-   
-}
-
 
 // creating a 48 min countdown timer for the basketball scoreboard
 const scoreboardTimerDisplay = document.querySelector('.timer');;
@@ -216,3 +206,25 @@ function displayShotClock(seconds) {
                                                                                     // is < 10. Using Ternary operator
     shotClockDisplay.textContent = display;
 }
+
+// Adding increments for Home & Guest scoreboard 
+const homePtCntEl=document.getElementById("home-pt-cnt");
+const guestPtCntEl= document.getElementById("guest-pt-cnt");
+let homeSum = 0;
+let guestSum = 0;
+
+function threePointer() {
+    document.getElementById("guest-3pt").onclick = function()
+    {
+        guestSum += 3;
+        guestPtCntEl.textContent = `${guestSum}`
+    } 
+
+    document.getElementById("home-3pt").onclick = function()
+    {
+        homeSum += 3;
+        homePtCntEl.textContent = `${homeSum}`
+    }
+        
+}
+
