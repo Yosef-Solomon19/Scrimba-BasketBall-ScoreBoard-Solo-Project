@@ -47,7 +47,7 @@ body {
 }
 
 button {
-    color: greenyellow;
+    color: rgb(184, 247, 89);
     border-radius: 3px;
     border: 1px solid greenyellow;
     outline: none;
@@ -72,7 +72,7 @@ button {
     padding: 0;
     background: #050505;
     border-radius: 8px;
-    color: greenyellow;
+    color: rgb(159, 244, 31);
 }
 
 /* Fonts for scoreboard letters: 
@@ -169,7 +169,7 @@ alittle different though. */
 
 /* Middle-Scoreboard  */
 .middle-scoreboard {
-    margin-top: 145px;
+    margin-top: 110px;
     /* border: 1px solid red; */
 
 }
@@ -242,7 +242,7 @@ alittle different though. */
     display: flex;
     flex-direction: column;
     align-items: center; 
-    justify-content: center;
+    /* justify-content: center; */
     font-size: 25px;
 }
 
@@ -254,19 +254,19 @@ alittle different though. */
     font-size: 45px;
     display: flex;
     align-items: center;    
-    justify-content: space-around;
+    justify-content: space-evenly;
     background: #050505;
     border-radius: 8px;
     color:rgb(226, 16, 16);
     margin-top:0;
 }
 
-.shot-clock h3 {
+#shot-clock {
     /* border: 1px solid yellow; */
-    margin-bottom: 10px
+    margin-bottom: 10px;
+    font-size: 30px;
 }
 
 .shot-clck-timer span {    
-    vertical-align: middle;
     padding-bottom: 8px;
 }
