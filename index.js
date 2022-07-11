@@ -155,4 +155,9 @@ Increments for the points, fouls and period.
 Font changes for text, & for numbers 
 */
 
+// Create shot clock timer
+function shotClockTimer(){
+    const shotTimer = 24; // 24 seconds 
+    timer(shotTimer);
+}
 
