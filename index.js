@@ -269,39 +269,45 @@ function periodCnt() {
 // Add increments for fouls
 const homeFoulCntEl = document.getElementById("home-foul-cnt");
 const guestFoulCntEl = document.getElementById("guest-foul-cnt");
-let homecnt = 0;
-let guestcnt = 0;
+let homeFoulCnt = 0;
+let guestFoulCnt = 0;
 function foulIncr() {
     document.getElementById("home-foul").onclick = function()
     {         
-        homecnt += 1 
-        homeFoulCntEl.textContent = `${homecnt}`;
+        homeFoulCnt += 1 
+        homeFoulCntEl.textContent = `${homeFoulCnt}`;
     }
     document.getElementById("guest-foul").onclick = function()
     {         
-        guestcnt += 1 
-        guestFoulCntEl.textContent = `${guestcnt}`;
+        guestFoulCnt += 1 
+        guestFoulCntEl.textContent = `${guestFoulCnt}`;
     }
 }
 
 // New game function resets the foul, period, and points 
 function newGame() {
-    homecnt = 0;
-    guestcnt = 0;
-    homeFoulCntEl.textContent = `${homecnt}`;
-    guestFoulCntEl.textContent = `${guestcnt}`;
+    homeFoulCnt = 0;
+    guestFoulCnt = 0;
+    homeFoulCntEl.textContent = `00`;
+    guestFoulCntEl.textContent = `00`;
 
     periodNum = 0;
     periodCountEl.textContent = 0;
 
     homeSum = 0;
     guestSum = 0;    
-    homePtCntEl.textContent = `${homeSum}`
-    guestPtCntEl.textContent = `${guestSum}`
+    homePtCntEl.textContent = `000`
+    guestPtCntEl.textContent = `000`
 
     guestPtCntEl.style.border="";
     homePtCntEl.style.border="";
 
+    clearInterval(countdown,currentCountdown)
+    timer(0);
+    currentCountdown = 0;    
+
+    clearInterval(shotTimerCountdown);
+    shotClockTimer(0);
 }
 
 // Create a function that will highlight which side is leading in points
@@ -335,6 +341,8 @@ document.getElementById"".onclick = function
 Initialize varaibles with booleans to create a state and using that to do something in a conditional statement. 
 Terneray Operator but I should learn more about that.
 Should research on potential ways to reduce DRY situations espceially in the CSS portion of the code.
+Styling from javavscript will make the change permanent. If the bonus circle is clicked and I tried to revert back to its default color
+    I for some reason wouldn't be able to get the lit color after clicking it. 
 
 Potential Future Work?
 There are probably code that I can reduce and implement DRY practices. 
