@@ -48,7 +48,7 @@ body {
 }
 
 button {
-    color: rgb(184, 247, 89);
+    color: greenyellow;
     border-radius: 3px;
     border: 1px solid greenyellow;
     outline: none;
@@ -142,7 +142,7 @@ button {
     background: #050505;
     border-radius: 8px;
     margin-top: 2px;
-    color: yellow;
+    color: rgb(255, 132, 0);
     font-family: 'Kdam Thmor Pro';
 }
 
@@ -173,7 +173,7 @@ alittle different though. */
 
 /* Middle-Scoreboard  */
 .middle-scoreboard {
-    margin-top: 60px;
+    margin-top: 50px;
     /* border: 1px solid red; */
 
 }
@@ -195,11 +195,12 @@ alittle different though. */
 /* Middle Scoreboard - Period section  */
 .period { 
     /* margin-top: 50px; */
+    /* border: 1px solid red;  */
+    margin-bottom: 0px;
     display: flex;
     flex-direction: row;
     align-items: center; 
-    justify-content: space-evenly;
-    
+    justify-content: space-evenly;  
 
 }
 .period h3 {
@@ -220,13 +221,15 @@ alittle different though. */
 /* Middle Scoreboard - Possession  section  */
 .possession {
     /* border: 1px solid yellow; */
+    text-align: center;
+    max-width: 150px;
+    margin-top: 0px;
     font-size: 25px;
     display: flex;
     flex-direction: row;
     align-items: center; 
-    justify-content: space-evenly;
-    
-    
+    justify-content: space-evenly;    
+    margin: 0 auto;  
 }
 .pos-circle {
     background: rgba(41, 236, 6, 0.958); /*rgba(41, 236, 6, 0.958); 125, 28, 28, 0.523default color state 255, 0, 0*/
