@@ -1,6 +1,5 @@
 "use strict";
 
-
 // creating a 48 min countdown timer for the basketball scoreboard
 const scoreboardTimerDisplay = document.querySelector('.timer');
  
