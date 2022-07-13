@@ -219,25 +219,35 @@ function threePointer() {
     {
         guestSum += 3;
         guestPtCntEl.textContent = `${guestSum}`
+        highlightleader()
     } 
     document.getElementById("home-3pt").onclick = function()
     {
         homeSum += 3;
         homePtCntEl.textContent = `${homeSum}`
-    }        
+        highlightleader()
+        console.log(homeSum)
+        
+    }
+    
+           
 }
+console.log(homeSum)
 
 function twoPointer() {
     document.getElementById("guest-2pt").onclick = function()
     {
         guestSum += 2;
         guestPtCntEl.textContent = `${guestSum}`
+        highlightleader()
     }
     document.getElementById("home-2pt").onclick = function()
     {
         homeSum += 2;
         homePtCntEl.textContent = `${homeSum}`
+        highlightleader()
     }
+   
 }
 
 function onePointer() {
@@ -245,12 +255,16 @@ function onePointer() {
     {
         guestSum += 1;
         guestPtCntEl.textContent = `${guestSum}`
+        highlightleader()
     }
     document.getElementById("home-1pt").onclick = function()
     {
         homeSum += 1;
         homePtCntEl.textContent = `${homeSum}`
+        highlightleader()
     }
+    
+    
 }
 
 // Add increments for period
@@ -302,4 +316,31 @@ function newGame() {
     homePtCntEl.textContent = `${homeSum}`
     guestPtCntEl.textContent = `${guestSum}`
 
+    guestPtCntEl.style.border="";
+    homePtCntEl.style.border="";
+
+}
+// home
+// "home-pt-cnt"
+// "guest-pt-cnt"
+// Highlight who is leading in points 
+
+// Create a function that will highlight which side is leading in points
+// the funciton is called inside the onlick function whenever the point buttons are clicked i.e 1pt, 2pt, 3pt 
+// for either side.
+function highlightleader() {
+    if (homeSum > guestSum) {
+        // console.log(`Home ${homeSum} guest ${guestSum}`);
+        homePtCntEl.style.border="1px solid yellow";
+        guestPtCntEl.style.border="";
+
+    } else if (guestSum > homeSum) {
+        // console.log(` Guest ${guestSum} Home ${homeSum} `);
+        guestPtCntEl.style.border="1px solid yellow";
+        homePtCntEl.style.border="";
+    } else {
+        guestPtCntEl.style.border="";
+        homePtCntEl.style.border="";
+
+    }
 }
