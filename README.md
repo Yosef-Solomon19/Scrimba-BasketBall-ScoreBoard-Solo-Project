@@ -1,4 +1,4 @@
-# Basket BallScoreboard (All of the information here will be editied)
+# Basket BallScoreboard (All of the information here will be added soon)
 
 [https://unit-converter-scrimba.netlify.app/](https://scrimba-solo-basketball-scoreboard-project.netlify.app/)
 
