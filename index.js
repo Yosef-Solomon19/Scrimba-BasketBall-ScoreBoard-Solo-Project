@@ -140,7 +140,7 @@ function possColorGuest() {
 /*
 7/5/2022
 What I've accomplished
-Adding featue to light up the color indicators when they're clicked i.e bonus/ possession 
+Adding feature to light up the color indicators when they're clicked i.e bonus/ possession 
 
 What I've Learned 
 If I wanted to switch between two colors I can use what's called a class list.toggle
@@ -232,19 +232,6 @@ function twoPointer() {
     {
         guestSum += 2;
         guestPtCntEl.textContent = `${guestSum}`
-    } 
-    document.getElementById("home-2pt").onclick = function()
-    {
-        homeSum += 2;
-        homePtCntEl.textContent = `${homeSum}`
-    }
-}
-
-function twoPointer() {
-    document.getElementById("guest-2pt").onclick = function()
-    {
-        guestSum += 2;
-        guestPtCntEl.textContent = `${guestSum}`
     }
     document.getElementById("home-2pt").onclick = function()
     {
@@ -280,4 +267,24 @@ function periodCnt() {
 
 }
 
+
+// Add increments for fouls
+const homeFoulCntEl = document.getElementById("home-foul-cnt");
+const guestFoulCntEl = document.getElementById("guest-foul-cnt");
+let homecnt = 0;
+let guestcnt = 0;
+function foulIncr() {
+    document.getElementById("home-foul").onclick = function()
+    {         
+        homecnt += 1 
+        homeFoulCntEl.textContent = `${homecnt}`;
+    }
+
+    document.getElementById("guest-foul").onclick = function()
+    {         
+        guestcnt += 1 
+        guestFoulCntEl.textContent = `${guestcnt}`;
+    }
+
+}
 
