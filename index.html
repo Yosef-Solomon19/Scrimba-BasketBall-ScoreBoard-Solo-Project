@@ -28,10 +28,10 @@
                 </div>
                 
                 <div class="side-fouls">
-                    <button>+1</button>
+                    <button id="home-foul" onclick="foulIncr()">+1</button>
                     <div>
                         <h2>Fouls</h2>
-                        <p class="side-foul-cnt">00</p>
+                        <p id="home-foul-cnt" class="side-foul-cnt">00</p>
                     </div>
                 </div>
             </div>
@@ -89,10 +89,10 @@
                 </div>
                 
                 <div class="side-fouls">
-                    <button>+1</button>
+                    <button id="guest-foul">+1</button>
                     <div>
                         <h2>Fouls</h2>
-                        <p class="side-foul-cnt">00</p>
+                        <p id="guest-foul-cnt" class="side-foul-cnt" onclick="foulIncr()">00</p>
                     </div>
                 </div>
             </div>
