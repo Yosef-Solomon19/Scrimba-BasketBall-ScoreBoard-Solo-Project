@@ -345,7 +345,8 @@ Styling from javavscript will make the change permanent. If the bonus circle is 
     I for some reason wouldn't be able to get the lit color after clicking it. 
 
 Potential Future Work?
-There are probably code that I can reduce and implement DRY practices. 
+There are probably code that I can reduce and implement DRY practices & 
+figure out a way when new game is clicked to revert the colors in bonus/poss to default. w/out js making styling changes permanent or something.
 Bug fixes maybe ? 
 I've spent a good chunk on time on this one and pretty proud of it but I should continue to the next lesson. 
 
