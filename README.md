@@ -1,6 +1,6 @@
 # Basket BallScoreboard (All of the information here will be added soon)
 
-[https://unit-converter-scrimba.netlify.app/](https://scrimba-solo-basketball-scoreboard-project.netlify.app/)
+[https://scrimba-solo-basketball-scoreboard-project.netlify.app/](https://scrimba-solo-basketball-scoreboard-project.netlify.app/)
 
 <!-- #### Part of Module 3(Making Website Interactive) challenge in the Front-End Career path at Scrimba.
 
