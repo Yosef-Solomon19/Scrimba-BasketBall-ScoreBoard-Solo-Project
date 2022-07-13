@@ -279,7 +279,6 @@ function foulIncr() {
         homecnt += 1 
         homeFoulCntEl.textContent = `${homecnt}`;
     }
-
     document.getElementById("guest-foul").onclick = function()
     {         
         guestcnt += 1 
@@ -288,3 +287,19 @@ function foulIncr() {
 
 }
 
+// New game function resets the foul, period, and points 
+function newGame() {
+    homecnt = 0;
+    guestcnt = 0;
+    homeFoulCntEl.textContent = `${homecnt}`;
+    guestFoulCntEl.textContent = `${guestcnt}`;
+
+    periodNum = 0 ;
+    periodCountEl.textContent = 0;
+
+    homeSum = 0;
+    guestSum = 0;    
+    homePtCntEl.textContent = `${homeSum}`
+    guestPtCntEl.textContent = `${guestSum}`
+
+}
