@@ -138,7 +138,7 @@ function possColorGuest() {
 }
 
 /*
-7/5/2022
+5/7/2022
 What I've accomplished
 Adding feature to light up the color indicators when they're clicked i.e bonus/ possession 
 
@@ -166,11 +166,7 @@ function shotClock(){
     } else {
         shotClockTimer(shotTimer);
         isShotClockOn = true; 
-    }
-    
-
-    // shotClockTimer(shotTimer);
-    
+    }    
 }
 
 const shotClockDisplay = document.querySelector(".shot-clck-timer p");
@@ -197,7 +193,6 @@ function shotClockTimer(seconds) {
             displayShotClock(secondsLeft);
         } 
     }, 1000);
-
 }
 
 function displayShotClock(seconds) {
@@ -219,35 +214,29 @@ function threePointer() {
     {
         guestSum += 3;
         guestPtCntEl.textContent = `${guestSum}`
-        highlightleader()
+        highlightleader();
     } 
     document.getElementById("home-3pt").onclick = function()
     {
         homeSum += 3;
         homePtCntEl.textContent = `${homeSum}`
-        highlightleader()
-        console.log(homeSum)
-        
-    }
-    
-           
+        highlightleader();
+    }           
 }
-console.log(homeSum)
 
 function twoPointer() {
     document.getElementById("guest-2pt").onclick = function()
     {
         guestSum += 2;
         guestPtCntEl.textContent = `${guestSum}`
-        highlightleader()
+        highlightleader();
     }
     document.getElementById("home-2pt").onclick = function()
     {
         homeSum += 2;
         homePtCntEl.textContent = `${homeSum}`
-        highlightleader()
-    }
-   
+        highlightleader();
+    }   
 }
 
 function onePointer() {
@@ -255,16 +244,14 @@ function onePointer() {
     {
         guestSum += 1;
         guestPtCntEl.textContent = `${guestSum}`
-        highlightleader()
+        highlightleader();
     }
     document.getElementById("home-1pt").onclick = function()
     {
         homeSum += 1;
         homePtCntEl.textContent = `${homeSum}`
-        highlightleader()
-    }
-    
-    
+        highlightleader();
+    }    
 }
 
 // Add increments for period
@@ -278,9 +265,7 @@ function periodCnt() {
         periodNum = 0;
         periodCountEl.textContent = 0;
     }
-
 }
-
 
 // Add increments for fouls
 const homeFoulCntEl = document.getElementById("home-foul-cnt");
@@ -298,7 +283,6 @@ function foulIncr() {
         guestcnt += 1 
         guestFoulCntEl.textContent = `${guestcnt}`;
     }
-
 }
 
 // New game function resets the foul, period, and points 
@@ -308,7 +292,7 @@ function newGame() {
     homeFoulCntEl.textContent = `${homecnt}`;
     guestFoulCntEl.textContent = `${guestcnt}`;
 
-    periodNum = 0 ;
+    periodNum = 0;
     periodCountEl.textContent = 0;
 
     homeSum = 0;
@@ -320,10 +304,6 @@ function newGame() {
     homePtCntEl.style.border="";
 
 }
-// home
-// "home-pt-cnt"
-// "guest-pt-cnt"
-// Highlight who is leading in points 
 
 // Create a function that will highlight which side is leading in points
 // the funciton is called inside the onlick function whenever the point buttons are clicked i.e 1pt, 2pt, 3pt 
@@ -344,3 +324,23 @@ function highlightleader() {
 
     }
 }
+
+/*
+13/7/2022
+What I've accomplished
+Adding foul increment, newGame function, highlight leader function 
+Adding fonts for integers and text 
+
+What I've Learned
+document.getElementById"".onclick = function
+Initialize varaibles with booleans to create a state and using that to do something in a conditional statement. 
+Terneray Operator but I should learn more about that.
+Should research on potential ways to reduce DRY situations espceially in the CSS portion of the code.
+
+Potential Future Work?
+There are probably code that I can reduce and implement DRY practices. 
+Bug fixes maybe ? 
+I've spent a good chunk on time on this one and pretty proud of it but I should continue to the next lesson. 
+
+
+*/
