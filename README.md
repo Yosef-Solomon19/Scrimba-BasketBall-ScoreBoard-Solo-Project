@@ -19,7 +19,7 @@ For this project the challenge was to build a project from scratch which was a b
 
 ### Requirements
 
-- Build from "scratch" - The Module did provide a skeleton to start from [x]
+- Build from "scratch" [x] - The module did provide a skeleton to start from.
 - Follow the design based from Figma [x] - I followed the majority of the design with some changes with to the fonts.
 - Make all six buttons work [x]
 
