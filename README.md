@@ -76,4 +76,4 @@ And I've learned that I don't have to remember everything. I think I head this f
 
 ### Continued development
 
-I
+There are probably lines of code in CSS and JS that I can impliement "DRY" practices but I've spent a good majority of my time working on this project. I might come back at much later date. I enjoyed the process alot and I want to do more solo projects and keep growing as a programmer.
