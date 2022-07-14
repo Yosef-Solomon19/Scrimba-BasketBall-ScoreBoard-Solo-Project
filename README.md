@@ -19,15 +19,17 @@ For this project the challenge was to build a project from scratch which was a b
 
 ### Requirements
 
-- Add a google font [x]
-- Different color palette [x]
-- Way to use :hover []
+- Build from "scratch" - The Module did provide a skeleton to start from [x]
+- Follow the design based from Figma [x] - I followed the majority of the design with some changes with to the fonts.
+- Make all six buttons work [x]
 
 ### Stretch Goals
 
-- Add a google font [x]
-- Different color palette [x]
-- Way to use :hover []
+At the time of working on this project in Mod 3, the module hasn't taught me the concepts I'd need to know to work on the strech goals. So this was extra credit.
+
+- Add a "New Game" button [x]
+- Highlight the leader [x]
+- Add a few more counters (e.g period, foul, shotclock timer)[x]
 
 ### Links
 
