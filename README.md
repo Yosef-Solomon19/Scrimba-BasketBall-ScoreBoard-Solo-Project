@@ -30,6 +30,7 @@ At the time of working on this project in Mod 3, the module hasn't taught me the
 - Add a "New Game" button [x]
 - Highlight the leader [x]
 - Add a few more counters (e.g period, foul, shotclock timer)[x]
+- Change the design [x] - This is where the 10% went to regarding the figma design from the requirements.
 
 ### Links
 
@@ -37,13 +38,11 @@ At the time of working on this project in Mod 3, the module hasn't taught me the
 
 ## My process
 
-I first started with looking at the original image and drawing on my notebook a large rectangle to indicate the browser.
-Prior to drawing the QR-component I highlighted areas that can be wrapped in a div. Such as the image and the text with the text also being wrapped in another div. Once I've layed out which components are in div's I started off writing the structure with HTML first. I did add the background color as-well and some borders to make sure that I had the structure down. I added some semantic html such as main then section.
+I initially started with looking for basketball scoreboards that had additional counters. And I found an image that I wanted to work off of for the rest of the project [https://thumbs.dreamstime.com/z/basketball-scoreboard-15216779.jpg]. Based on the basketball scoreboard image I wanted to to divide the scoreboard into three sections/columns. This would make it easier to work on one section at a time. This also helped with how to structure each column via flexbox. I tried to make utility classes since the home column and the guest column would be identical interms of positioning and styling. For the middle of the scoreboard I believe had similar positioning aswell. I used flexbox for the most part to establish the columns for each sections.
 
-The section would center the content and add margin from the top.
-Inside the section are two divs, one to contain the image and paragraphs and a nest div to wrap the paragraphs. Most of the elements have class included for styling purposes.
+For javascript, I had to create timers I had to follow a video by Wes Bos to help with that. I liked how the video used modern Js syntax compared to what I've found when it comes to building timers.
 
-Now that the structure is complete I moved over to the styling. The majority of my time was spent on
+For the bonus and possession indicators, I had the indicators be clickable. I could've written a function with a conditional statement based on the number of fouls. However, I was biting more than I can chew with the current stretch goals that I had. And it was taking up for time than I would've liked.
 
 ### Built with
 
@@ -54,8 +53,23 @@ Now that the structure is complete I moved over to the styling. The majority of 
 
 ### What I learned
 
-Understanding flex box and flex direction influence with justify content and align items. I learned how to make images circular by setting the width and height at the same px and setting the border radius to 50%.
-The size of the width of an element can affect the values of justify content if there isn't enough space.
+I think I'm getting more comfortable with flexbox and understanding its relationship with width, and how it affects other elements.
+
+I Figured out how to pause and resume timer
+For the pause, I needed to use the method to cancel the repeated action set by setInterval.
+I think this also means that I can't use the original value from the countdown variable.
+
+    To resume,
+    I initally had a another variable that stores the original value inside the countdown interval variable/method.
+    From there the resumeTimer funciton calls the timer function but with an update value from where
+    the original value stopped when clear Interval was called after hiiting the pause button.
+
+If I wanted to switch between two colors I can use what's called a class list.toggle
+
+Terneray Operator but I should learn more about that.
+
+Styling from javascript will make the change permanent. If the bonus circle indicator is clicked and I tried to revert it back to its default color
+I for some reason wouldn't be able to get the lit color after clicking it.
 
 ### Continued development
 
