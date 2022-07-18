@@ -59,11 +59,9 @@ I haven an idea on how to build timers but I'd would have to revisit the Wes Bos
 I Figured out how to pause and resume timer
 For the pause, I needed to use the method to cancel the repeated action set by setInterval.
 I think this also means that I can't use the original value from the countdown variable.
-
-    To resume,
-    I initally had a another variable that stores the original value inside the countdown interval variable/method.
-    From there the resumeTimer funciton calls the timer function but with an update value from where
-    the original value stopped when clear Interval was called after hiiting the pause button.
+To resume, I initally had a another variable that stores the original value inside the countdown interval variable/method.
+From there the resumeTimer funciton calls the timer function but with an update value from where
+the original value stopped when clear Interval was called after hiiting the pause button.
 
 If I wanted to switch between two colors I can use what's called a class list.toggle
 
