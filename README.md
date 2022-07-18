@@ -12,6 +12,7 @@
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
 
 ## Overview
 
@@ -75,3 +76,7 @@ And I've learned that I don't have to remember everything. I think I head this f
 ### Continued development
 
 There are probably lines of code in CSS and JS that I can impliement "DRY" practices but I've spent a good majority of my time working on this project. I might come back at much later date. I enjoyed the process alot and I want to do more solo projects and keep growing as a programmer.
+
+### Useful Resources
+
+- Wes Boss video on building timers: [https://www.youtube.com/watch?v=LAaf7-WuJJQ&t=989s]
